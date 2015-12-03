@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: Diary | mofumofu</title>
+  <title>sublime symlink disappeared in OS X El Capitan | mofumofu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Main for study notes">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mofumofu">
-<meta property="og:url" content="http://hiei0222.com/tags/Diary/index.html">
+  <meta name="description" content="Today when my want to use “subl” in terminal, but there is a error message: 
+-bash: subl: command not found
+This is the first time run sublime text after upgrading to El Capitan.But I think it may hav">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sublime symlink disappeared in OS X El Capitan">
+<meta property="og:url" content="http://hiei0222.com/2015/12/03/use-subl-command-in-OS-X-El-Capitan/index.html">
 <meta property="og:site_name" content="mofumofu">
-<meta property="og:description" content="Main for study notes">
+<meta property="og:description" content="Today when my want to use “subl” in terminal, but there is a error message: 
+-bash: subl: command not found
+This is the first time run sublime text after upgrading to El Capitan.But I think it may hav">
+<meta property="og:updated_time" content="2015-12-03T17:48:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mofumofu">
-<meta name="twitter:description" content="Main for study notes">
+<meta name="twitter:title" content="sublime symlink disappeared in OS X El Capitan">
+<meta name="twitter:description" content="Today when my want to use “subl” in terminal, but there is a error message: 
+-bash: subl: command not found
+This is the first time run sublime text after upgrading to El Capitan.But I think it may hav">
   
     <link rel="alternative" href="/atom.xml" title="mofumofu" type="application/atom+xml">
   
@@ -173,53 +180,91 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-use-subl-command-in-OS-X-El-Capitan" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/12/03/hello-world/" class="archive-article-date">
-  	<time datetime="2015-12-03T04:28:13.000Z" itemprop="datePublished">Dec 3</time>
+    <div class="article-meta">
+      <a href="/2015/12/03/use-subl-command-in-OS-X-El-Capitan/" class="article-date">
+  	<time datetime="2015-12-03T13:59:33.000Z" itemprop="datePublished">2015-12-03</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/03/hello-world/">Hello World</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      sublime symlink disappeared in OS X El Capitan
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Diary/">Diary</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime-text/">sublime text</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/">tools</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Today when my want to use “subl” in terminal, but there is a error message: </p>
+<p><code>-bash: subl: command not found</code></p>
+<p>This is the first time run sublime text after upgrading to El Capitan.<br>But I think it may have some trouble about my system path.</p>
+<p>And try this:<br><code>sudo ln -s &quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot; /usr/bin/subl</code></p>
+<p>result:<br><code>ln: /usr/bin/subl: Operation not permitted</code></p>
+<p>hmmmm….</p>
+<p>In El Capitan, user are not allowed to write to <code>/usr/bin</code>, but you can write to <code>/usr/local/bin</code>.<br>So if you want to add the others path variable, it also should be written in <code>usr/local/bin</code>.</p>
+<p>And you can try to do this:<br><code>sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl</code>  </p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/12/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'mofumofu'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
 </div>
       <footer id="footer">
@@ -245,9 +290,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
