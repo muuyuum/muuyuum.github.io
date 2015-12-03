@@ -78,7 +78,7 @@ var Instagram = (function(){
 	}
 
 	var getList = function(url){
-		$(".open-ins").html("图片来自instagram，正在加载中…");
+		$(".open-ins").html("image from instagram，now loading…");
 		$.ajax({
 			url: url,
 			type:"GET",
@@ -90,7 +90,7 @@ var Instagram = (function(){
 					if(next){
 						getList(next);
 					}else{
-						$(".open-ins").html("图片来自instagram，点此访问");
+						$(".open-ins").html("image from instagram");
 						ctrler(_collection);
 					}
 				}else{
