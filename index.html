@@ -109,7 +109,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Diary/" style="font-size: 10px;">Diary</a> <a href="/tags/sublime-text/" style="font-size: 10px;">sublime text</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a>
+						<a href="/tags/Diary/" style="font-size: 10px;">Diary</a> <a href="/tags/leetcode/" style="font-size: 10px;">leetcode</a> <a href="/tags/sublime-text/" style="font-size: 10px;">sublime text</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a>
 					</div>
 				</section>
 				
@@ -174,6 +174,66 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-292-Nim-Game" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/19/292-Nim-Game/" class="article-date">
+  	<time datetime="2015-12-19T09:28:35.000Z" itemprop="datePublished">2015-12-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/19/292-Nim-Game/">#292. Nim Game</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>In the end of this year, it’s time to do some new challenge.<br>Someone always write OJ problems in C/C++ or Java.<br>But this time I just want to use python to deal the problems.</p>
+<p>Let’s begin with leetcode in python~!<br>So the first problem I chose the highest acceptance of all the problem.</p>
+<h1 id="292-_Nim_Game">292. Nim Game</h1><p>In one move, you can remove 1~3 stones.<br>Just think these cases:</p>
+<p>1stone:  first player remove all (first win)<br>2stones: first player remove all (first win)<br>3stones: first player remove all (first win)<br>4stones: no matter first player remove 1~3, second player remove all (second win)<br>5stones: first player remove 1, no matter second player remove 1~3, first player remove all (first win)<br>…</p>
+<p>Finally you can find the first win condition that the stones number is multiple of 4.</p>
+<p>So the code is so easy just in one line:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">canWinNim</span><span class="params">(self, n)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> n % <span class="number">4</span> != <span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/">leetcode</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-use-subl-command-in-OS-X-El-Capitan" class="article article-type-post" itemscope itemprop="blogPost">
   
