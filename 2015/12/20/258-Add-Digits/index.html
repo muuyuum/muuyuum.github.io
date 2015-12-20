@@ -3,24 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | mofumofu</title>
+  <title>258. Add Digits | mofumofu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Here is my new blog.
-Wordpress to hexoIt’s time to say goodbye to Wordpress.I’m tired of maintaining the site server. And hexo can run on github just be free.
-New blogThis blog will be written in Engl">
+  <meta name="description" content="Today’s problem is a digit quiz.
+For example, we assume number has 5 digits number.$num = (a + b + c + d + e) + (a \times 9999 + b \times 999 + c \times 99 + d \times 9)$.
+and then $a \times 9999 + b">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://hiei0222.com/2015/12/03/hello-world/index.html">
+<meta property="og:title" content="258. Add Digits">
+<meta property="og:url" content="http://hiei0222.com/2015/12/20/258-Add-Digits/index.html">
 <meta property="og:site_name" content="mofumofu">
-<meta property="og:description" content="Here is my new blog.
-Wordpress to hexoIt’s time to say goodbye to Wordpress.I’m tired of maintaining the site server. And hexo can run on github just be free.
-New blogThis blog will be written in Engl">
-<meta property="og:updated_time" content="2015-12-03T04:28:13.000Z">
+<meta property="og:description" content="Today’s problem is a digit quiz.
+For example, we assume number has 5 digits number.$num = (a + b + c + d + e) + (a \times 9999 + b \times 999 + c \times 99 + d \times 9)$.
+and then $a \times 9999 + b">
+<meta property="og:updated_time" content="2015-12-20T16:04:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Here is my new blog.
-Wordpress to hexoIt’s time to say goodbye to Wordpress.I’m tired of maintaining the site server. And hexo can run on github just be free.
-New blogThis blog will be written in Engl">
+<meta name="twitter:title" content="258. Add Digits">
+<meta name="twitter:description" content="Today’s problem is a digit quiz.
+For example, we assume number has 5 digits number.$num = (a + b + c + d + e) + (a \times 9999 + b \times 999 + c \times 99 + d \times 9)$.
+and then $a \times 9999 + b">
   
     <link rel="alternative" href="/atom.xml" title="mofumofu" type="application/atom+xml">
   
@@ -180,11 +180,11 @@ New blogThis blog will be written in Engl">
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-258-Add-Digits" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/12/03/hello-world/" class="article-date">
-  	<time datetime="2015-12-03T04:28:13.000Z" itemprop="datePublished">2015-12-03</time>
+      <a href="/2015/12/20/258-Add-Digits/" class="article-date">
+  	<time datetime="2015-12-20T14:26:35.000Z" itemprop="datePublished">2015-12-20</time>
 </a>
     </div>
   
@@ -197,7 +197,7 @@ New blogThis blog will be written in Engl">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      258. Add Digits
     </h1>
   
 
@@ -206,7 +206,7 @@ New blogThis blog will be written in Engl">
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Diary/">Diary</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/">leetcode</a></li></ul>
 	</div>
 
         
@@ -217,10 +217,10 @@ New blogThis blog will be written in Engl">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Here is my new blog.</p>
-<h2 id="Wordpress_to_hexo">Wordpress to hexo</h2><p>It’s time to say goodbye to Wordpress.<br>I’m tired of maintaining the site server. And hexo can run on github just be free.</p>
-<h3 id="New_blog">New blog</h3><p>This blog will be written in English or 中文 or 日本語.<br>The contents almost talk about what I want to do and what I am doing now.<br>By the way, Recently I’m interested to write program to realize machine learning alogrithm.</p>
-<p>If you are interested, you can follow my github or twitter(Japanese only) or weibo(Chinese only).</p>
+        <p>Today’s problem is a digit quiz.</p>
+<p>For example, we assume number has 5 digits number.<br>$num = (a + b + c + d + e) + (a \times 9999 + b \times 999 + c \times 99 + d \times 9)$.</p>
+<p>and then $a \times 9999 + b \times 999 + c \times 99 + d \times 9$ must be divided by 9.<br>So the result $num \bmod 9$ is same as $a + b + c + d + e \bmod 9$.</p>
+<p>$$f(n) =<br>  \begin{cases}<br>    0       &amp; \quad \text{if } n = 0\\<br>    9  &amp; \quad \text{if } n \neq 0, n \equiv 0 \ (\bmod 9)\\<br>    n \bmod 9  &amp; \quad \text{if } n \not\equiv 0 \ (\bmod 9)\\<br>  \end{cases}<br>$$<br>For one fomula is:<br>$f(n) = (n - 1) \bmod 9 + 1$.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">addDigits</span><span class="params">(self, num)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> (num - <span class="number">1</span>) % <span class="number">9</span> + <span class="number">1</span> <span class="keyword">if</span> num &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">0</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -230,15 +230,11 @@ New blogThis blog will be written in Engl">
     
 <nav id="article-nav">
   
-    <a href="/2015/12/03/use-subl-command-in-OS-X-El-Capitan/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          sublime symlink disappeared in OS X El Capitan
-        
-      </div>
-    </a>
   
+    <a href="/2015/12/19/292-Nim-Game/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">#292. Nim Game</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
