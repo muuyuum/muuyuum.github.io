@@ -3,24 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>258. Add Digits | mofumofu</title>
+  <title>pythonのエラー対処：&#39;ascii&#39; codec can&#39;t encode characters in position | mofumofu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Today’s problem is a digit quiz.
-For example, we assume number has 5 digits number.$num = (a + b + c + d + e) + (a \times 9999 + b \times 999 + c \times 99 + d \times 9)$.
-and then $a \times 9999 + b">
+  <meta name="description" content="環境：Mac OS X 10.11Python 2.7.11
+
+最近にはpythonでスクレイピングスクリプトからcsvファイルを作る時に1UnicodeEncodeError: &apos;ascii&apos; codec can&apos;t encode characters in position 3-4: ordinal not in range(128)
+このようなエラーメッセージが出てすごく困っていた。色な方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="258. Add Digits">
-<meta property="og:url" content="http://muuyuum.github.io/2015/12/20/258-Add-Digits/index.html">
+<meta property="og:title" content="pythonのエラー対処：'ascii' codec can't encode characters in position">
+<meta property="og:url" content="http://muuyuum.github.io/2016/06/06/pythonのエラー対処：-ascii-codec-can-t-encode-characters-in-position/index.html">
 <meta property="og:site_name" content="mofumofu">
-<meta property="og:description" content="Today’s problem is a digit quiz.
-For example, we assume number has 5 digits number.$num = (a + b + c + d + e) + (a \times 9999 + b \times 999 + c \times 99 + d \times 9)$.
-and then $a \times 9999 + b">
-<meta property="og:updated_time" content="2015-12-20T16:04:38.000Z">
+<meta property="og:description" content="環境：Mac OS X 10.11Python 2.7.11
+
+最近にはpythonでスクレイピングスクリプトからcsvファイルを作る時に1UnicodeEncodeError: &apos;ascii&apos; codec can&apos;t encode characters in position 3-4: ordinal not in range(128)
+このようなエラーメッセージが出てすごく困っていた。色な方法">
+<meta property="og:updated_time" content="2016-06-06T08:03:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="258. Add Digits">
-<meta name="twitter:description" content="Today’s problem is a digit quiz.
-For example, we assume number has 5 digits number.$num = (a + b + c + d + e) + (a \times 9999 + b \times 999 + c \times 99 + d \times 9)$.
-and then $a \times 9999 + b">
+<meta name="twitter:title" content="pythonのエラー対処：'ascii' codec can't encode characters in position">
+<meta name="twitter:description" content="環境：Mac OS X 10.11Python 2.7.11
+
+最近にはpythonでスクレイピングスクリプトからcsvファイルを作る時に1UnicodeEncodeError: &apos;ascii&apos; codec can&apos;t encode characters in position 3-4: ordinal not in range(128)
+このようなエラーメッセージが出てすごく困っていた。色な方法">
   
     <link rel="alternative" href="/atom.xml" title="mofumofu" type="application/atom+xml">
   
@@ -180,11 +183,11 @@ and then $a \times 9999 + b">
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-258-Add-Digits" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-pythonのエラー対処：-ascii-codec-can-t-encode-characters-in-position" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/12/20/258-Add-Digits/" class="article-date">
-  	<time datetime="2015-12-20T14:26:35.000Z" itemprop="datePublished">2015-12-20</time>
+      <a href="/2016/06/06/pythonのエラー対処：-ascii-codec-can-t-encode-characters-in-position/" class="article-date">
+  	<time datetime="2016-06-06T07:36:08.000Z" itemprop="datePublished">2016-06-06</time>
 </a>
     </div>
   
@@ -197,7 +200,7 @@ and then $a \times 9999 + b">
         
   
     <h1 class="article-title" itemprop="name">
-      258. Add Digits
+      pythonのエラー対処：&#39;ascii&#39; codec can&#39;t encode characters in position
     </h1>
   
 
@@ -206,7 +209,7 @@ and then $a \times 9999 + b">
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/">leetcode</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
 	</div>
 
         
@@ -217,10 +220,17 @@ and then $a \times 9999 + b">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Today’s problem is a digit quiz.</p>
-<p>For example, we assume number has 5 digits number.<br>$num = (a + b + c + d + e) + (a \times 9999 + b \times 999 + c \times 99 + d \times 9)$.</p>
-<p>and then $a \times 9999 + b \times 999 + c \times 99 + d \times 9$ must be divided by 9.<br>So the result $num \bmod 9$ is same as $a + b + c + d + e \bmod 9$.</p>
-<p>$$f(n) =<br>  \begin{cases}<br>    0       &amp; \quad \text{if } n = 0\\<br>    9  &amp; \quad \text{if } n \neq 0, n \equiv 0 \ (\bmod 9)\\<br>    n \bmod 9  &amp; \quad \text{if } n \not\equiv 0 \ (\bmod 9)\\<br>  \end{cases}<br>$$<br>For one fomula is:<br>$f(n) = (n - 1) \bmod 9 + 1$.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">addDigits</span><span class="params">(self, num)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> (num - <span class="number">1</span>) % <span class="number">9</span> + <span class="number">1</span> <span class="keyword">if</span> num &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+        <p>環境：<br>Mac OS X 10.11<br>Python 2.7.11</p>
+<hr>
+<p>最近にはpythonでスクレイピングスクリプトからcsvファイルを作る時に<br><figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UnicodeEncodeError: <span class="attribute">'ascii</span>' codec can<span class="attribute">'t</span> encode characters <span class="keyword">in</span> position <span class="number">3</span>-<span class="number">4</span>: ordinal <span class="keyword">not</span> <span class="keyword">in</span> <span class="keyword">range</span>(<span class="number">128</span>)</span><br></pre></td></tr></table></figure></p>
+<p>このようなエラーメッセージが出てすごく困っていた。<br>色な方法でencodeやdecodeの方法を試してみたけど、どちらにも解決できなかったね。</p>
+<p>一応デフォルトのエンコードを確認してみる<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="prompt">&gt;&gt;</span>&gt; import sys</span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; sys.getdefaultencoding()</span><br><span class="line"><span class="string">'ascii'</span></span><br></pre></td></tr></table></figure></p>
+<p>おや？デフォルトはasciiになってるぞ！<br>デフォルトをutf-8にすればいいじゃん！</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">sys.<span class="function"><span class="title">setdefaultencoding</span><span class="params">(<span class="string">'utf-8'</span>)</span></span></span><br></pre></td></tr></table></figure>
+<p>実行してみたら、モジュールのエラーメッセージが出てきた：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AttributeError: <span class="string">'module'</span> <span class="tag">object</span> has no attribute <span class="string">'setdefaultencoding'</span></span><br></pre></td></tr></table></figure>
+<p>なんだかんだsysのモジュールを一回reloadしないと行けないらしい<br>こういうふうに書き換えると正しく動作した<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line"><span class="function"><span class="title">reload</span><span class="params">(sys)</span></span></span><br><span class="line">sys.<span class="function"><span class="title">setdefaultencoding</span><span class="params">(<span class="string">'utf-8'</span>)</span></span></span><br></pre></td></tr></table></figure></p>
+<p>結論：<br>・日本語のエンコード処理はめっちゃめんどうくさい<br>・そろそろPython3.xに移行しましょう</p>
 
       
     </div>
@@ -230,18 +240,9 @@ and then $a \times 9999 + b">
     
 <nav id="article-nav">
   
-    <a href="/2015/12/22/136-Single-Number/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          136.Single Number
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/12/19/292-Nim-Game/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">#292. Nim Game</div>
+    <a href="/2015/12/22/136-Single-Number/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">136.Single Number</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
